@@ -1,17 +1,16 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: I Gusti Ngurah Ervan Juli Ardana
+**NRP**: 5025211205  
+**Judul TA**: KLASIFIKASI PENYAKIT KRONIS BERBASIS MULTIMODAL DEEP LEARNING PADA DATA SAMPEL BPJS KESEHATAN 
+**Dosen Pembimbing**: Dini Adni Navastara, S.Kom., M.Sc.  
+**Dosen Ko-pembimbing**: Prof. Dr. Ir. Diana Purwitasari, S.Kom., M.Sc.
 
 ---
 
 ## 📺 Demo Aplikasi  
-Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](https://github.com/user-attachments/assets/2ac0b3e3-4440-4cf3-a569-4a79397bb8a9)](https://youtu.be/k0ok6r54A_c)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
@@ -20,56 +19,51 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 
 ## 🛠 Panduan Instalasi & Menjalankan Software  
 
-### Prasyarat  
-- Daftar dependensi (contoh):
-  - Python 3.10+
-  - Node.js v18+
-  - MySQL 8.0
-  - [Lainnya...]
+### Prasyarat
+
+| Library                             | Keterangan                                                                             |
+| ---------------------------------- | -------------------------------------------------------------------------------------- |
+| `streamlit`                        | Membangun antarmuka aplikasi berbasis web                                             |
+| `pandas`                           | Manipulasi dan analisis data tabular (CSV, DataFrame)                                 |
+| `numpy`                            | Operasi numerik, vektor, dan array                                                    |
+| `tensorflow`                       | Framework Deep Learning; memuat model `.h5`, `Layer`, `keras.preprocessing`           |
+| `scikit-learn` (`sklearn`)         | Normalisasi fitur numerik dengan `StandardScaler`                                     |
+| `networkx`                         | Membangun dan menganalisis struktur graph                                             |
+| `pyvis`                            | Visualisasi graph interaktif di Streamlit dengan tampilan HTML                        |
+| `pickle`                           | Memuat objek Python yang telah disimpan (misalnya tokenizer)                          |
+| `tempfile`                         | Membuat file HTML sementara untuk visualisasi Pyvis                                   |
+| `streamlit.components.v1`         | Menampilkan konten HTML kustom (grafik jaringan dari Pyvis)                           |
+| `IPython.display`                 | Untuk membersihkan output interaktif (opsional, digunakan di notebook)                |
+| `scipy`                            | Paket pendukung untuk analisis ilmiah, meskipun tidak secara eksplisit dipakai        |
+| `re`  | cleaning teks dengan ekspresi reguler   |
 
 ### Langkah-langkah  
 1. **Clone Repository**  
    ```bash
-   git clone https://github.com/Informatics-ITS/TA.git
+   git clone https://github.com/Informatics-ITS/ta-NgurahErvan.git
    ```
 2. **Instalasi Dependensi**
    ```bash
    cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
+   pip install -r requirements.txt
+   !wget --no-check-certificate http://nlp.stanford.edu/data/glove.6B.zip
+   !unzip glove.6B.zip  
    ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
-4. **Jalankan Aplikasi**
+3. **Jalankan Aplikasi**
    ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
+   streamlit run app.py
    ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
+5. Buka browser dan kunjungi: `http://localhost:8501` (sesuaikan dengan port proyek Anda)
 
 ---
-
-## 📚 Dokumentasi Tambahan
-
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
-
----
-
 ## ✅ Validasi
 
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
+- Project ini tidak dapat digunakan langsung, karena terdapat data confidential
 
 ---
 
 ## ⁉️ Pertanyaan?
 
 Hubungi:
-- Penulis: [email@mahasiswa]
-- Pembimbing Utama: [email@pembimbing]
+- Penulis: ngurahervan23@gmail.com
+- Pembimbing Utama: dini_navastara@if.its.ac.id
